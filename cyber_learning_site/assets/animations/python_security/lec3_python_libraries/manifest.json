@@ -1,0 +1,245 @@
+{
+ "hash": "cc2bf3ad1c765c4af56d8c0d433b9c3f2f01f61d",
+ "frames": [
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s01_1.png",
+   "scene": 0
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s02_1.png",
+   "scene": 1
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s03_1.png",
+   "scene": 2
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s03_2.png",
+   "scene": 2
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s04_1.png",
+   "scene": 3
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s04_2.png",
+   "scene": 3
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s05_1.png",
+   "scene": 4
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s06_1.png",
+   "scene": 5
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s06_2.png",
+   "scene": 5
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s07_1.png",
+   "scene": 6
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s07_2.png",
+   "scene": 6
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s08_1.png",
+   "scene": 7
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s09_1.png",
+   "scene": 8
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s09_2.png",
+   "scene": 8
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s10_1.png",
+   "scene": 9
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s10_2.png",
+   "scene": 9
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s11_1.png",
+   "scene": 10
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s12_1.png",
+   "scene": 11
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s12_2.png",
+   "scene": 11
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s13_1.png",
+   "scene": 12
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s13_2.png",
+   "scene": 12
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s14_1.png",
+   "scene": 13
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s15_1.png",
+   "scene": 14
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s15_2.png",
+   "scene": 14
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s16_1.png",
+   "scene": 15
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s17_1.png",
+   "scene": 16
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s17_2.png",
+   "scene": 16
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s17_3.png",
+   "scene": 16
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s17_4.png",
+   "scene": 16
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s18_1.png",
+   "scene": 17
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s19_1.png",
+   "scene": 18
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s19_2.png",
+   "scene": 18
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s20_1.png",
+   "scene": 19
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s20_2.png",
+   "scene": 19
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s21_1.png",
+   "scene": 20
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s22_1.png",
+   "scene": 21
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s22_2.png",
+   "scene": 21
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s23_1.png",
+   "scene": 22
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s24_1.png",
+   "scene": 23
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s25_1.png",
+   "scene": 24
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s25_2.png",
+   "scene": 24
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s26_1.png",
+   "scene": 25
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s26_2.png",
+   "scene": 25
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s27_1.png",
+   "scene": 26
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s28_1.png",
+   "scene": 27
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s28_2.png",
+   "scene": 27
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s29_1.png",
+   "scene": 28
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s30_1.png",
+   "scene": 29
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s31_1.png",
+   "scene": 30
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s31_2.png",
+   "scene": 30
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s32_1.png",
+   "scene": 31
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s32_2.png",
+   "scene": 31
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s33_1.png",
+   "scene": 32
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s33_2.png",
+   "scene": 32
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s34_1.png",
+   "scene": 33
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s34_2.png",
+   "scene": 33
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s35_1.png",
+   "scene": 34
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s35_2.png",
+   "scene": 34
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s36_1.png",
+   "scene": 35
+  },
+  {
+   "file": "assets/animations/python_security/lec3_python_libraries/s37_1.png",
+   "scene": 36
+  }
+ ]
+}
