@@ -1,0 +1,280 @@
+{
+  "title": "المحاضرة 1: مقدمة في بايثون",
+  "title_en": "Lecture 1: Introduction to Python",
+  "order": 1,
+  "summary": "أساسيات لغة بايثون: الصيغة، المتغيرات، أنواع البيانات، المعاملات، الشروط والحلقات، مع أمثلة من الأمن السيبراني.",
+  "scenes": [
+    {
+      "title": "What is Python?",
+      "text": "بايثون لغة برمجة عالية المستوى ومفسَّرة وعامة الأغراض، وتُستخدم في مجالات كثيرة منها الأمن السيبراني.",
+      "bullets": [
+        "High-level, interpreted, general-purpose language",
+        "Cybersecurity  ·  Data analysis  ·  Artificial intelligence",
+        "Automation  ·  Web development"
+      ]
+    },
+    {
+      "title": "Python in Cybersecurity",
+      "text": "هذه أهم استخدامات بايثون في الأمن السيبراني، وسنتعلم أساسياتها خلال هذه الملازم.",
+      "bullets": [
+        "Network scanning and analysis",
+        "Log analysis",
+        "Malware analysis",
+        "Penetration testing",
+        "Security automation",
+        "Cryptography",
+        "Digital forensics",
+        "Threat detection"
+      ]
+    },
+    {
+      "title": "Your First Program",
+      "text": "الدالة print تعرض النص على الشاشة. هذا أبسط برنامج في بايثون.",
+      "code": "print(\"Hello, Cybersecurity!\")",
+      "output": "Hello, Cybersecurity!",
+      "verify": true
+    },
+    {
+      "title": "Comments",
+      "text": "التعليق يبدأ بالرمز # ويتجاهله المفسِّر، وهو لشرح الكود فقط. وبايثون لا تستخدم { } لتحديد الكتل البرمجية.",
+      "code": "# This is a single-line comment\nprint(\"Security Analysis\")",
+      "output": "Security Analysis",
+      "verify": true
+    },
+    {
+      "title": "Indentation",
+      "text": "المسافة البادئة (Indentation) هي التي تحدد الكتلة البرمجية في بايثون؛ السطر المُزاح يتبع جملة if.",
+      "code": "age = 25\nif age >= 18:\n    print(\"Access granted\")",
+      "output": "Access granted",
+      "verify": true
+    },
+    {
+      "title": "Wrong Indentation",
+      "text": "إذا لم نضع مسافة بادئة بعد if يحدث خطأ في الصيغة.",
+      "code": "age = 25\nif age >= 18:\nprint(\"Access granted\")",
+      "output": "IndentationError: expected an indented block",
+      "output_label": "Error",
+      "error": true
+    },
+    {
+      "title": "Variables",
+      "text": "المتغير يخزّن قيمة، وبايثون تحدد نوع البيانات تلقائياً.",
+      "code": "username = \"admin\"   # string\nage = 30            # integer\nscore = 95.5        # float\nactive = True       # boolean"
+    },
+    {
+      "title": "Checking Types with type()",
+      "text": "الدالة type تُظهر نوع القيمة المخزَّنة في المتغير.",
+      "code": "username = \"admin\"\nage = 30\nscore = 95.5\nactive = True\n\nprint(type(username))\nprint(type(age))\nprint(type(score))\nprint(type(active))",
+      "output": "<class 'str'>\n<class 'int'>\n<class 'float'>\n<class 'bool'>",
+      "verify": true
+    },
+    {
+      "title": "Python Data Types",
+      "text": "هذه أهم أنواع البيانات المدمجة في بايثون مع مثال لكل نوع.",
+      "table": {
+        "headers": [
+          "Data Type",
+          "Description",
+          "Example"
+        ],
+        "rows": [
+          [
+            "int",
+            "Integer numbers",
+            "100"
+          ],
+          [
+            "float",
+            "Decimal numbers",
+            "10.5"
+          ],
+          [
+            "str",
+            "Text",
+            "\"admin\""
+          ],
+          [
+            "bool",
+            "True/False",
+            "True"
+          ],
+          [
+            "list",
+            "Ordered, mutable collection",
+            "[1, 2, 3]"
+          ],
+          [
+            "tuple",
+            "Ordered, immutable collection",
+            "(1, 2, 3)"
+          ],
+          [
+            "set",
+            "Unordered collection of unique values",
+            "{1, 2, 3}"
+          ],
+          [
+            "dict",
+            "Key-value pairs",
+            "{\"user\": \"admin\"}"
+          ],
+          [
+            "NoneType",
+            "Represents no value",
+            "None"
+          ]
+        ],
+        "mono_cols": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "title": "Integers (int)",
+      "text": "الأعداد الصحيحة وعملياتها الحسابية. في الأمن السيبراني تمثّل المنافذ وعدد المحاولات وحجم الحزم.",
+      "code": "a = 10\nb = 3\nprint(a + b)\nprint(a - b)\nprint(a * b)\nprint(a / b)\nprint(a // b)\nprint(a % b)\nprint(a ** b)",
+      "output": "13\n7\n30\n3.3333333333333335\n3\n1\n1000",
+      "verify": true
+    },
+    {
+      "title": "Floating-Point (float)",
+      "text": "العدد العشري يحتوي فاصلة عشرية، مثل درجة الخطورة risk_score.",
+      "code": "temperature = 36.7\nprint(type(temperature))",
+      "output": "<class 'float'>",
+      "verify": true
+    },
+    {
+      "title": "Strings (str)",
+      "text": "النص يُكتب بين علامتي اقتباس مفردة أو مزدوجة، وله دوال مثل upper و lower و len.",
+      "code": "username = \"admin\"\nprint(username.upper())\nprint(username.lower())\nprint(len(username))",
+      "output": "ADMIN\nadmin\n5",
+      "verify": true
+    },
+    {
+      "title": "String Indexing",
+      "text": "كل حرف في النص له رقم موقع، والفهرسة في بايثون تبدأ من 0.",
+      "code": "word = \"Python\"\nprint(word[0])\nprint(word[1])",
+      "output": "P\ny",
+      "verify": true
+    },
+    {
+      "title": "Booleans (bool)",
+      "text": "القيمة المنطقية إما True أو False، وهي مهمة جداً في القرارات الأمنية مثل السماح بالدخول.",
+      "code": "authenticated = True\nif authenticated:\n    print(\"User authenticated\")",
+      "output": "User authenticated",
+      "verify": true
+    },
+    {
+      "title": "Lists",
+      "text": "القائمة تخزّن عدة قيم ويمكن تعديلها: نصل للعنصر برقمه، ونضيف بـ append ونحذف بـ remove.",
+      "code": "ports = [22, 80, 443, 8080]\nprint(ports[0])\nprint(ports[2])\nports.append(3306)\nports.remove(80)\nprint(ports)",
+      "output": "22\n443\n[22, 443, 8080, 3306]",
+      "verify": true
+    },
+    {
+      "title": "Tuples",
+      "text": "الـ tuple يشبه القائمة لكن لا يمكن تغيير محتواه بعد إنشائه، ومناسب للقيم الثابتة المترابطة.",
+      "code": "protocol = (\"TCP\", 443)\nprint(protocol[0])\nprint(protocol[1])",
+      "output": "TCP\n443",
+      "verify": true
+    },
+    {
+      "title": "Sets",
+      "text": "المجموعة تحتوي قيماً فريدة فقط، فتُحذف المكررات تلقائياً. مفيدة لإيجاد عناوين IP أو المنافذ الفريدة.",
+      "code": "ports = {22, 80, 443, 80, 22}\nprint(ports)",
+      "output": "{80, 443, 22}",
+      "verify": true
+    },
+    {
+      "title": "Dictionaries",
+      "text": "القاموس يخزّن المعلومات كأزواج مفتاح/قيمة، وهو مهم جداً لأن الأحداث الأمنية تكون غالباً بيانات منظّمة.",
+      "code": "user = {\n    \"username\": \"admin\",\n    \"role\": \"administrator\",\n    \"active\": True\n}\nprint(user[\"username\"])\nprint(user[\"role\"])",
+      "output": "admin\nadministrator",
+      "verify": true
+    },
+    {
+      "title": "None",
+      "text": "None تعني عدم وجود قيمة، ونفحصها بالمعامل is.",
+      "code": "password = None\nif password is None:\n    print(\"Password not provided\")",
+      "output": "Password not provided",
+      "verify": true
+    },
+    {
+      "title": "Type Conversion",
+      "text": "نحوّل بين الأنواع المتوافقة باستخدام int و float و str و bool.",
+      "code": "port = \"443\"\nport_number = int(port)\nprint(port_number)\nprint(type(port_number))",
+      "output": "443\n<class 'int'>",
+      "verify": true
+    },
+    {
+      "title": "Input from the User",
+      "text": "الدالة input تستقبل بيانات من المستخدم وتُرجعها دائماً كنص؛ لذلك نستخدم int عندما نريد رقماً.",
+      "code": "username = input(\"Enter username: \")\nprint(\"Welcome\", username)",
+      "output": "Enter username: Ali\nWelcome Ali",
+      "output_label": "Example run"
+    },
+    {
+      "title": "Basic Operators",
+      "text": "ثلاث مجموعات من المعاملات: حسابية، ومقارنة، ومنطقية.",
+      "table": {
+        "headers": [
+          "Group",
+          "Operators"
+        ],
+        "rows": [
+          [
+            "Arithmetic",
+            "+   -   *   /   //   %   **"
+          ],
+          [
+            "Comparison",
+            "==   !=   >   <   >=   <="
+          ],
+          [
+            "Logical",
+            "and   or   not"
+          ]
+        ],
+        "mono_cols": [
+          1
+        ]
+      }
+    },
+    {
+      "title": "Logical Operators",
+      "text": "نجمع الشروط بـ and و or و not: يُسمح بالدخول فقط إذا كان المستخدم موثَّقاً والطلب غير عالي الخطورة.",
+      "code": "authenticated = True\nhigh_risk = False\nif authenticated and not high_risk:\n    print(\"Access granted\")",
+      "output": "Access granted",
+      "verify": true
+    },
+    {
+      "title": "Conditional Statements",
+      "text": "if / elif / else تنفّذ كتلة مختلفة حسب الشرط. هذا أساس منطق التحكم بالدخول المبني على الخطورة.",
+      "code": "risk_score = 0.85\nif risk_score >= 0.80:\n    print(\"Access denied\")\nelif risk_score >= 0.50:\n    print(\"Multi-factor authentication required\")\nelse:\n    print(\"Access granted\")",
+      "output": "Access denied",
+      "verify": true
+    },
+    {
+      "title": "for Loop",
+      "text": "حلقة for تمر على عناصر قائمة واحداً واحداً، مثل المنافذ أو عناوين IP أو سجلات الأحداث.",
+      "code": "ports = [22, 80, 443]\nfor port in ports:\n    print(port)",
+      "output": "22\n80\n443",
+      "verify": true
+    },
+    {
+      "title": "while Loop",
+      "text": "حلقة while تتكرر طالما الشرط صحيح؛ انتبه أن يتغير شيء داخلها حتى تنتهي.",
+      "code": "attempts = 0\nwhile attempts < 3:\n    print(\"Authentication attempt\")\n    attempts += 1",
+      "output": "Authentication attempt\nAuthentication attempt\nAuthentication attempt",
+      "verify": true
+    },
+    {
+      "title": "Practical Cybersecurity Example",
+      "text": "برنامج صغير يجمع المتغيرات وأنواع البيانات والشروط والإدخال: إذا وصلت محاولات الدخول الفاشلة إلى 5 يظهر تنبيه.",
+      "code": "username = input(\"Username: \")\nfailed_attempts = int(input(\"Failed login attempts: \"))\n\nif failed_attempts >= 5:\n    print(\"ALERT: Account may be under attack.\")\nelse:\n    print(\"Normal authentication activity.\")\nprint(\"User:\", username)",
+      "output": "Username: Ali\nFailed login attempts: 6\nALERT: Account may be under attack.\nUser: Ali",
+      "output_label": "Example run"
+    }
+  ]
+}

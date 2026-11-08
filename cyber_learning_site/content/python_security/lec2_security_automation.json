@@ -1,0 +1,205 @@
+{
+  "title": "المحاضرة 2: أتمتة المهام الأمنية بالبايثون",
+  "title_en": "Lecture 2: Automating Security Tasks",
+  "order": 2,
+  "summary": "كيف تُستخدم بايثون لأتمتة مهام الأمن السيبراني: تحليل السجلات، كشف الهجمات، مراقبة سلامة الملفات وتوليد التنبيهات.",
+  "scenes": [
+    {
+      "title": "Cybersecurity Automation",
+      "text": "الأتمتة تقلل الوقت والجهد البشري في المهام الأمنية المتكررة، فالمؤسسات تولّد أعداداً ضخمة من الأحداث الأمنية. بايثون تستطيع:",
+      "bullets": [
+        "Monitor systems and networks",
+        "Analyze security logs",
+        "Detect suspicious activities",
+        "Monitor file integrity",
+        "Detect unauthorized access attempts",
+        "Automate incident-response tasks",
+        "Generate security alerts",
+        "Produce security reports",
+        "Support vulnerability assessment"
+      ]
+    },
+    {
+      "title": "The Automation Process",
+      "text": "العملية العامة للأتمتة الأمنية: نجمع البيانات، نحللها، نكتشف التهديد، ننبّه، نوصي بإجراء، ثم نستجيب.",
+      "flow": [
+        "Collect",
+        "Analyze",
+        "Detect",
+        "Alert",
+        "Recommend",
+        "Respond"
+      ]
+    },
+    {
+      "title": "Basic Workflow",
+      "text": "بدلاً من أن يفحص المسؤول آلاف أحداث الدخول يدوياً، يقوم برنامج بايثون بالخطوات تلقائياً.",
+      "flow": [
+        "Security Events",
+        "Python Script",
+        "Data Analysis",
+        "Threat Detection",
+        "Security Alert",
+        "Recommended Action"
+      ]
+    },
+    {
+      "title": "Why Use Python?",
+      "text": "بايثون مناسبة للأمن السيبراني لسهولتها وكثرة مكتباتها وقدرتها على الأتمتة وتحليل السجلات.",
+      "bullets": [
+        "Easy to learn: simple, readable syntax",
+        "Many libraries: os, sys, re, json, hashlib, socket...",
+        "Automation of repetitive security work",
+        "Log analysis: read, filter, search large files",
+        "Security monitoring in authorized environments"
+      ]
+    },
+    {
+      "title": "Tasks That Can Be Automated",
+      "text": "أمثلة على مهام أمنية يمكن أتمتتها بالبايثون.",
+      "table": {
+        "headers": [
+          "Security Task",
+          "Python Application"
+        ],
+        "rows": [
+          [
+            "Log Analysis",
+            "Analyze system and application logs"
+          ],
+          [
+            "Threat Detection",
+            "Identify suspicious activities"
+          ],
+          [
+            "File Integrity Monitoring",
+            "Detect unauthorized file changes"
+          ],
+          [
+            "Login Monitoring",
+            "Monitor authentication events"
+          ],
+          [
+            "Network Monitoring",
+            "Monitor authorized network activity"
+          ],
+          [
+            "Alert Generation",
+            "Generate security alerts"
+          ],
+          [
+            "Incident Response",
+            "Support automated response procedures"
+          ],
+          [
+            "Security Reporting",
+            "Generate security reports"
+          ],
+          [
+            "Vulnerability Assessment",
+            "Support security checking"
+          ],
+          [
+            "Backup Verification",
+            "Verify backup status and integrity"
+          ]
+        ]
+      }
+    },
+    {
+      "title": "Custom Security Script: Counting Failures",
+      "text": "السكربت الأمني المخصص يحل مشكلة محددة؛ هنا يعدّ محاولات الدخول الفاشلة تلقائياً بدل العدّ اليدوي.",
+      "code": "failed_attempts = 0\nlogin_events = [\"failed\", \"failed\", \"success\", \"failed\", \"failed\", \"failed\"]\n\nfor event in login_events:\n    if event == \"failed\":\n        failed_attempts += 1\n\nprint(\"Failed attempts:\", failed_attempts)",
+      "output": "Failed attempts: 5",
+      "verify": true
+    },
+    {
+      "title": "Detecting Brute-Force Attacks",
+      "text": "نقارن عدد المحاولات الفاشلة بحدّ أقصى (threshold)؛ إذا تجاوزه نُصدر تنبيهاً.",
+      "code": "failed_attempts = 0\nthreshold = 5\nlogin_events = [\"failed\", \"failed\", \"failed\", \"failed\", \"failed\"]\n\nfor event in login_events:\n    if event == \"failed\":\n        failed_attempts += 1\n\nif failed_attempts >= threshold:\n    print(\"ALERT!\")\n    print(\"Possible brute-force attack detected.\")\nelse:\n    print(\"Normal activity.\")",
+      "output": "ALERT!\nPossible brute-force attack detected.",
+      "verify": true
+    },
+    {
+      "title": "How Does It Work?",
+      "text": "هذا مثال بسيط على الكشف المبني على القواعد (Rule-based threat detection).",
+      "bullets": [
+        "1. Reads the login events",
+        "2. Counts the failed attempts",
+        "3. Compares the number with a predefined threshold",
+        "4. Generates an alert if the threshold is exceeded"
+      ]
+    },
+    {
+      "title": "Monitoring Security Logs",
+      "text": "سجلات الأمان تحتوي معلومات قيّمة عن النشاط داخل النظام، وبايثون تستطيع قراءتها وتحليلها.",
+      "code": "log_data = \"\"\"\nLOGIN_SUCCESS\nLOGIN_FAILED\nLOGIN_FAILED\nLOGIN_FAILED\nLOGIN_FAILED\n\"\"\"\nfailed = log_data.count(\"LOGIN_FAILED\")\nprint(\"Failed logins:\", failed)\nif failed >= 4:\n    print(\"Warning: Suspicious login activity detected.\")",
+      "output": "Failed logins: 4\nWarning: Suspicious login activity detected.",
+      "verify": true
+    },
+    {
+      "title": "File Integrity: SHA-256",
+      "text": "نحسب بصمة SHA-256 للبيانات؛ أي تغيير في المحتوى ينتج بصمة مختلفة.",
+      "code": "import hashlib\n\ndata = b\"Important system file\"\nfile_hash = hashlib.sha256(data).hexdigest()\nprint(\"SHA-256:\", file_hash)",
+      "output": "SHA-256: 035214285172a95797b28222194c3b4d56490df38115f4ae0c7f01bfdb5e66f8",
+      "verify": true
+    },
+    {
+      "title": "File Integrity Monitoring (FIM)",
+      "text": "نحسب البصمة للملف الموثوق ونخزّنها، ثم نحسبها لاحقاً ونقارن: إذا اختلفت تظهر إنذار، وإلا فالوضع طبيعي.",
+      "flow": [
+        "Original File",
+        "Calculate SHA-256",
+        "Store Hash",
+        "Later Verification",
+        "Calculate New Hash",
+        "Compare Hashes",
+        "Changed?"
+      ],
+      "branches": [
+        {
+          "label": "Yes",
+          "text": "Alert",
+          "kind": "bad"
+        },
+        {
+          "label": "No",
+          "text": "Normal",
+          "kind": "good"
+        }
+      ]
+    },
+    {
+      "title": "Network Security Monitoring",
+      "text": "وحدة socket تجلب معلومات أساسية عن الجهاز، ويمكن دمجها في أنظمة مراقبة أكبر. تُستخدم فقط في بيئات مصرّح بها.",
+      "code": "import socket\n\nhostname = socket.gethostname()\nip_address = socket.gethostbyname(hostname)\n\nprint(\"Hostname:\", hostname)\nprint(\"IP Address:\", ip_address)",
+      "output": "Hostname: Security-PC\nIP Address: 192.168.1.10",
+      "output_label": "Example output"
+    },
+    {
+      "title": "Threat Detection Using Python",
+      "text": "نصنّف الأحداث الأمنية بحسب قواعد محددة مسبقاً؛ المستخدم الذي فشل 5 مرات أو أكثر يُعدّ مشبوهاً.",
+      "code": "events = [\n    {\"user\": \"Ali\", \"failed\": 1},\n    {\"user\": \"Sara\", \"failed\": 2},\n    {\"user\": \"Admin\", \"failed\": 8}\n]\n\nfor event in events:\n    if event[\"failed\"] >= 5:\n        print(\"Suspicious activity:\", event[\"user\"])",
+      "output": "Suspicious activity: Admin",
+      "verify": true
+    },
+    {
+      "title": "Security Alert Generation",
+      "text": "بعد اكتشاف تهديد محتمل يمكن للنظام توليد تنبيه.",
+      "code": "risk_level = \"HIGH\"\nif risk_level == \"HIGH\":\n    print(\"SECURITY ALERT\")\n    print(\"Immediate investigation is recommended.\")",
+      "output": "SECURITY ALERT\nImmediate investigation is recommended.",
+      "verify": true
+    },
+    {
+      "title": "Where Do Alerts Go?",
+      "text": "في البيئات الحقيقية تُربط التنبيهات بأنظمة مثل مركز العمليات الأمنية وأنظمة SIEM.",
+      "bullets": [
+        "Security Operations Centers (SOC)",
+        "SIEM platforms",
+        "Email systems",
+        "Security dashboards",
+        "Incident-management systems"
+      ]
+    }
+  ]
+}
