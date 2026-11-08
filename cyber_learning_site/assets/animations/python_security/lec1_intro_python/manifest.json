@@ -1,0 +1,201 @@
+{
+ "hash": "c6dbd824f50767e913cd051463571e31eeefb183",
+ "frames": [
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s01_1.png",
+   "scene": 0
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s02_1.png",
+   "scene": 1
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s03_1.png",
+   "scene": 2
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s03_2.png",
+   "scene": 2
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s04_1.png",
+   "scene": 3
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s04_2.png",
+   "scene": 3
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s05_1.png",
+   "scene": 4
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s05_2.png",
+   "scene": 4
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s06_1.png",
+   "scene": 5
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s06_2.png",
+   "scene": 5
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s07_1.png",
+   "scene": 6
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s08_1.png",
+   "scene": 7
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s08_2.png",
+   "scene": 7
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s09_1.png",
+   "scene": 8
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s10_1.png",
+   "scene": 9
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s10_2.png",
+   "scene": 9
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s11_1.png",
+   "scene": 10
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s11_2.png",
+   "scene": 10
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s12_1.png",
+   "scene": 11
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s12_2.png",
+   "scene": 11
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s13_1.png",
+   "scene": 12
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s13_2.png",
+   "scene": 12
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s14_1.png",
+   "scene": 13
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s14_2.png",
+   "scene": 13
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s15_1.png",
+   "scene": 14
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s15_2.png",
+   "scene": 14
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s16_1.png",
+   "scene": 15
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s16_2.png",
+   "scene": 15
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s17_1.png",
+   "scene": 16
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s17_2.png",
+   "scene": 16
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s18_1.png",
+   "scene": 17
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s18_2.png",
+   "scene": 17
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s19_1.png",
+   "scene": 18
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s19_2.png",
+   "scene": 18
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s20_1.png",
+   "scene": 19
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s20_2.png",
+   "scene": 19
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s21_1.png",
+   "scene": 20
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s21_2.png",
+   "scene": 20
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s22_1.png",
+   "scene": 21
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s23_1.png",
+   "scene": 22
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s23_2.png",
+   "scene": 22
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s24_1.png",
+   "scene": 23
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s24_2.png",
+   "scene": 23
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s25_1.png",
+   "scene": 24
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s25_2.png",
+   "scene": 24
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s26_1.png",
+   "scene": 25
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s26_2.png",
+   "scene": 25
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s27_1.png",
+   "scene": 26
+  },
+  {
+   "file": "assets/animations/python_security/lec1_intro_python/s27_2.png",
+   "scene": 26
+  }
+ ]
+}
